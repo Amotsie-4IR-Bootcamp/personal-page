@@ -26,7 +26,8 @@ img {
 }
 
 .city .block {
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-bottom: 1em;
 }
 
 .city .block p {
@@ -50,6 +51,15 @@ h3 {
 
 .history .his-section {
   display: flex;
+}
+
+.history .his-section .block {
+  align-items: center;
+}
+
+.history .his-section .block p {
+  max-height: 200px;
+  overflow: hidden;
 }
 
 section {
@@ -79,10 +89,16 @@ td {
     background-color: rgb(225, 249, 249);
     display: flex;
     align-items: center;
+    width: 100vw;
   }
 
   img {
     height: 150px;
+  }
+
+  .profile {
+    justify-content: center;
+    align-items: center;
   }
   .profile h1 {
     margin-bottom: 10px;
@@ -91,7 +107,12 @@ td {
     max-width: 50%;
   }
 
+  .city {
+    align-items: center;
+  }
+
   .city .block p {
+    margin-top: 0.75em;
     max-width: 90%;
   }
 
@@ -107,6 +128,18 @@ td {
 
   .subjects section {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subjects section .subject {
+    margin-top: 1em;
+  }
+
+  .history {
+    width: 90 vw;
+    align-items: center;
+    margin: 0 auto;
   }
 
   .history .his-section {
@@ -131,6 +164,9 @@ td {
   .history .his-section section:nth-child(even) .block p {
     order: 2;
     margin-left: 1em;
+  }
+  .history .his-section section:nth-child(odd) .block p {
+    margin-right: 1em;
   }
 
   table {
